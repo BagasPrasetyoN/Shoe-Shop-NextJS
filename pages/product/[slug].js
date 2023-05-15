@@ -22,14 +22,14 @@ const ProductDetails = () => {
                     <div className="flex-[1] py-3">
                         {/* Tittle start */}
                             <div className="text-[34px] font-semibold mb-2">
-                                Jordan Retro 6 G
+                            King's Chicken <br/> 
                             </div>
                             {/* Product Subtittle */}
                             <div className="text-lg font-semibold mb-5">
-                                Men&apos;s Golf Shoes
+                            [ Rasa Baru ]
                             </div>
                             <div className="text-lg font-semibold">
-                                Rp. 1.969.500-, 
+                                Rp. 150.000-, 
                             </div>
                             <div className="text=md font-medium text-black/[0.5]">
                                 incl. of taxes
@@ -43,7 +43,7 @@ const ProductDetails = () => {
                                 {/* Heading Start */}
                                 <div className="flex justify-between mb-2">
                                     <div className="text-md font-semibold">
-                                        Select Size
+                                        Add Extras
                                     </div>
                                     <div className="text-md font-medium text-black/[0.5] cursor-pointer">
                                         Select Guide
@@ -53,38 +53,38 @@ const ProductDetails = () => {
 
                                 {/* Size Start */}
                                 <div className="grid grid-cols-3 gap-2">
-                                    <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                                        UK 6
+                                    <div className="border rounded-md py-4 text-center font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
+                                        Vanilla Sundae
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 6.5
+                                        Chocolate Sundae
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 7
+                                        Add Jalapeno Cheese
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 7.5
+                                        Float Mocha
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 8
+                                        Fusion Kitkat®
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 8.5
+                                        Air Mineral
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 9
+                                        Large Fries
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 9.5
+                                        1 Pc Ayam
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium hover:border-black cursor-pointer">
-                                        UK 10
-                                    </div>
-                                    <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                                        UK 10.5
+                                        Milo Dinosaur
                                     </div>
                                     <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
-                                        UK 11
+                                        Kopi Gula Aren
+                                    </div>
+                                    <div className="border rounded-md text-center py-3 font-medium cursor-not-allowed bg-black/[0.1] opacity-50">
+                                        King fusion Cookies and Cream
                                     </div>
                                 </div>
                                 {/* Size End */}
@@ -97,9 +97,21 @@ const ProductDetails = () => {
                             <div>
                             {/* Product size end */}
 
+
+                            <div >
+                                <div className="text-[28px] mt-6 text-amber-600 font-bold mb-5">
+                                    Paket Crispy 1
+                                </div>
+                                <div className="text-md mb-5 text-justify">
+                                1 pc Ayam Crispy + Nasi + Jasmine Tea Medium <br/>
+                                [ Rasa Baru, Enaknya sampe gigitan terakhir ! ] 
+                                
+                                𝘗𝘰𝘵𝘰𝘯𝘨𝘢𝘯 𝘢𝘺𝘢𝘮 𝘺𝘢𝘯𝘨 𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢 𝘵𝘦𝘳𝘨𝘢𝘯𝘵𝘶𝘯𝘨 𝘬𝘦𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢𝘢𝘯 𝘥𝘪 𝘵𝘰𝘬𝘰 𝘱𝘢𝘥𝘢 𝘴𝘢𝘢𝘵 𝘱𝘦𝘮𝘦𝘴𝘢𝘯𝘢𝘯/𝘱𝘦𝘯𝘨𝘪𝘳𝘪𝘮𝘢𝘯
+                                </div>
+                            </div>
                             {/* Add to Cart Button Start  */}
                             <div className="mt-8">
-                                <button className="w-full py-4 rounded-full bg-black text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75">
+                                <button className="w-full py-4 rounded-full bg-amber-600 text-white text-lg font-medium transition-transform active:scale-95 mb-3 hover:opacity-75">
                                     Add to Cart
                                 </button>
                             </div>
@@ -113,34 +125,6 @@ const ProductDetails = () => {
                                     <IoMdHeartEmpty size={20}/>
                                 </button>
                             {/* Wishlist Button End */}
-
-                            <div >
-                                <div className="text-lg font-bold mb-5">
-                                    Product Details
-                                </div>
-                                <div className="text-md mb-5">
-                                    Feel unbeatable from the tee box to the final
-                                    putt in a design ithat's pure earlu MJ: speed, 
-                                    class and laden with true early '90s touches 
-                                    like visible Air and a translucent rubber sole
-                                    that continue to stand the test of time. This
-                                    model fuses the strut of 1st MJ's championshop
-                                    with some of our best golf technology, helping
-                                    you make a statment of confidance whe it comes
-                                    time to tame the course.
-                                </div>
-                                <div className="text-md mb-5">
-                                    Feel unbeatable from the tee box to the final
-                                    putt in a design ithat's pure earlu MJ: speed, 
-                                    class and laden with true early '90s touches 
-                                    like visible Air and a translucent rubber sole
-                                    that continue to stand the test of time. This
-                                    model fuses the strut of 1st MJ's championshop
-                                    with some of our best golf technology, helping
-                                    you make a statment of confidance whe it comes
-                                    time to tame the course.
-                                </div>
-                            </div>
 
                         </div>
                         {/* right column end */}

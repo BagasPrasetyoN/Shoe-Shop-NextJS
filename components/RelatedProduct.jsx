@@ -2,6 +2,7 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ProductCard from './ProductCard';
+import Link from "next/link";
 
 const RelatedProduct = () => {
 
@@ -31,16 +32,51 @@ const RelatedProduct = () => {
                 You Might Also Like
             </div>
             <Carousel responsive={responsive} containerClass="-mx-[10px]" itemClass="px-[10px]">
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
-                <ProductCard/>
+              <Link href="/">
+                <div>
+                  <img className="w-full" src="/assets/menu1.jpg" alt="Product Image" />
+                </div>
+                <div className="text-[20px] grid grid-cols-1 lg:grid-cols-1 md:text-[22px] text-center mt-6 mb-6 text-yellow-800 font-extrabold">
+                  <h3>King's Chicken <br/> [ Rasa Baru ]</h3>
+                </div>
+              </Link>
+
+              <Link href="/">
+                <div>
+                  <img className="w-full" src="/assets/menu2.jpg" alt="Product Image" />
+                </div>
+                <div className="text-[20px] grid grid-cols-1 lg:grid-cols-1 md:text-[22px] text-center mt-6 mb-6 text-yellow-800 font-extrabold">
+                  <h3>Special Menu</h3>
+                </div>
+              </Link>
+
+              <Link href="/">
+                <div>
+                  <img className="w-full" src="/assets/menu3.jpg" alt="Product Image" />
+                </div>
+                <div className="text-[20px] grid grid-cols-1 lg:grid-cols-1 md:text-[22px] text-center mt-6 mb-6 text-yellow-800 font-extrabold">
+                  <h3>Tropical Whopper <br/> [ Limited Time ]</h3>
+                </div>
+              </Link>
+
+              <Link href="/">
+                <div>
+                  <img className="w-full" src="/assets/menu4.jpg" alt="Product Image" />
+                </div>
+                <div className="text-[20px] grid grid-cols-1 lg:grid-cols-1 md:text-[22px] text-center mt-6 mb-6 text-yellow-800 font-extrabold">
+                  <h3>Friyay Chicken</h3>
+                </div>
+              </Link>
+
+              <Link href="/">
+                <div>
+                  <img className="w-full" src="/assets/menu5.jpg" alt="Product Image" />
+                </div>
+                <div className="text-[20px] grid grid-cols-1 lg:grid-cols-1 md:text-[22px] text-center mt-6 mb-6 text-yellow-800 font-extrabold">
+                  <h3>Bk App Exclusive</h3>
+                </div>
+              </Link>
+
             </Carousel>
         </div>
     );

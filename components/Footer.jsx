@@ -2,141 +2,100 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 import Wrapper from "./Wrapper";
+import { MdCallEnd } from "react-icons/md";
+import { AiFillMail } from "react-icons/ai";
+
+function sendEmail() {
+    window.location.href = 'mailto:guestservice@burgerking.co.id';
+  }
+  function handleFacebookClick() {
+    window.location.href = 'https://www.facebook.com/burgerkingindonesia/';
+  }
+  function handleInstagramClick() {
+    window.location.href = 'https://www.instagram.com/burgerking.id/';
+  }
+  function handleTwitterClick() {
+    window.location.href = 'https://twitter.com/burgerking_id';
+  }
+  function handleYoutubeClick() {
+    window.location.href = 'https://www.youtube.com/channel/UC-F_fh9CRDwhJrY_ibHae-g';
+  }
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white pt-14 pb-3">
-            <Wrapper className="flex justify-between flex-col md:flex-row gap-[50px] md:gap-0">
-                {/* LEFT START */}
-                <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] flex-col md:flex-row">
-                    {/* MENU START */}
-                    <div className="flex flex-col gap-3 shrink-0">
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            Find a store
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            become a partner
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            sign up for email
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            send us feedback
-                        </div>
-                        <div className="font-oswald font-medium uppercase text-sm cursor-pointer">
-                            student discount
-                        </div>
-                    </div>
-                    {/* MENU END */}
-
-                    {/* NORMAL MENU START */}
-                    <div className="flex gap-[50px] md:gap-[75px] lg:gap-[100px] shrink-0">
-                        {/* MENU START */}
-                        <div className="flex flex-col gap-3">
-                            <div className="font-oswald font-medium uppercase text-sm">
-                                get help
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Order Status
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Delivery
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Returns
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Payment Options
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Contact Us
-                            </div>
-                        </div>
-                        {/* MENU END */}
-
-                        {/* MENU START */}
-                        <div className="flex flex-col gap-3">
-                            <div className="font-oswald font-medium uppercase text-sm">
-                                About nike
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                News
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Careers
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Investors
-                            </div>
-                            <div className="text-sm text-white/[0.5] hover:text-white cursor-pointer">
-                                Sustainability
-                            </div>
-                        </div>
-                        {/* MENU END */}
-                    </div>
-                    {/* NORMAL MENU END */}
+        <footer className="text-white bg-zinc-800 pt-8 pb-12">
+            <Wrapper>
+                <div className="pb-4 md:pb-2 text-center flex justify-center md:justify-start text-[24px] md:text-[22px] font-extrabold">
+                    <h1>BURGER KING© DELIVERY</h1>
                 </div>
-                {/* LEFT END */}
-
+                        
                 {/* RIGHT START */}
                 <div className="flex gap-4 justify-center md:justify-start">
                     <div
                         onClick={() =>
-                            window.open("https://facebook.com", "_blank")
+                            window.open("tel:+628123456789", "_blank")
                         }
-                        className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer"
+                        className="w-10 pr-4 h-10 flex md:items-center justify-center text-white cursor-pointer"
                     >
-                        <FaFacebookF size={20} />
+                        <MdCallEnd size={24} />
                     </div>
                     <div
                         onClick={() =>
-                            window.open("https://twitter.com", "_blank")
+                            window.open("tel:+628123456789", "_blank")
                         }
-                        className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer"
+                        className="w-10 pl-2 text-[24px] h-10 flex md:items-center font-extrabold justify-center text-white cursor-pointer"
                     >
-                        <FaTwitter size={20} />
+                        <p>150025</p>
                     </div>
-                    <div 
-                        onClick={() =>
-                            window.open("https://www.youtube.com", "_blank")
-                        }
-                        className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer">
-                        <FaYoutube size={20} />
+                    
+                    <div className="pl-10 flex md:items-center cursor-pointer" onClick={sendEmail}>
+                        <AiFillMail size={24} />
+                        <p className="pl-2 text-[14px]">guestservice@burgerking.co.id</p>
                     </div>
-                    <div 
-                         onClick={() =>
-                            window.open("https://www.instagram.com", "_blank")
-                        }
-                        className="w-10 h-10 rounded-full bg-white/[0.25] flex items-center justify-center text-black hover:bg-white/[0.5] cursor-pointer">
-                        <FaInstagram size={20} />
+
+                    <div className="flex md:items-center cursor-pointer justify-center items-center ">
+                        <FaFacebookF size={22} className="mx-0 mb-4 md:mb-1" onClick={handleFacebookClick} />
+
+                        
                     </div>
+
+                    <div className="flex md:items-center cursor-pointer justify-center items-center ">
+                        <FaInstagram size={24} className="mx-0 mb-4 md:mb-1"  onClick={handleInstagramClick}/>
+                    </div>
+
+                    <div className="flex md:items-center cursor-pointer justify-center items-center ">
+                        <FaTwitter size={24} className="mx-0 mb-4 md:mb-1"  onClick={handleTwitterClick}/>
+                        
+                    </div>
+
+                    <div className=" flex md:items-center cursor-pointer justify-center items-center ">
+                        <FaYoutube size={24} className="mx-0 mb-4 md:mb-1"  onClick={handleYoutubeClick}/>
+                    </div>
+
                 </div>
                 {/* RIGHT END */}
+            </Wrapper>
+
+            <Wrapper classname="mb-6 mt-6 md:hidden" >
+                <div className="flex justify-between text-center mb-2 flex-col font-bold md:flex-row gap-[10px] md:gap-0">
+                    <a href="/">About Us</a>
+                </div>    
+
+                <div className="flex justify-between text-center mb-2 flex-col font-bold md:flex-row gap-[10px] md:gap-0">
+                    <a href="/">Kebijakan Privasi</a>
+                </div>   
+
+                <div className="flex justify-between text-center mb-2 flex-col font-bold md:flex-row gap-[10px] md:gap-0">
+                    <a href="/">Syarat dan Ketentuan</a>
+                </div>   
             </Wrapper>
             
             <Wrapper className="flex justify-between mt-10 flex-col md:flex-row gap-[10px] md:gap-0">
                 {/* LEFT START */}
-                <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer text-center md:text-left">
-                    © 2023 Nike, Inc. All Rights Reserved
+                <div className="text-[12px] text-white/[0.5] text-center md:text-left">
+                    TM & © 2023 Burger King Corporation. Used Under License. All rights reserved.
                 </div>
                 {/* LEFT END */}
-
-                {/* RIGHT START */}
-                <div className="flex gap-2 md:gap-5 text-center md:text-left flex-wrap justify-center">
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Guides
-                    </div>
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Terms of Sale
-                    </div>
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Terms of Use
-                    </div>
-                    <div className="text-[12px] text-white/[0.5] hover:text-white cursor-pointer">
-                        Privacy Policy
-                    </div>
-                </div>
-                {/* RIGHT END */}
             </Wrapper>
         </footer>
     );

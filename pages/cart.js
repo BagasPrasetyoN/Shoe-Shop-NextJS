@@ -31,16 +31,15 @@ const Cart = () => {
                         <div className="py-5 my-5 bg-black/[0.05] rounded-xl">
                             <div className="flex justify-between">
                                 <div className="uppercase text-md md:text-lg ml-2 font-medium text-black">Subtotal</div>
-                                <div className="text-md md:text-lg mr-2 font-medium text-black"> Rp. 1.969.500-,</div>
+                                <div className="text-md md:text-lg mr-2 font-medium text-black"> Rp. 150.000-,</div>
                             </div>
 
-                            <div className="text-sm text-justify ml-2 mr-2 md:text-md py-5 border-t mt-5">
-                                The Subtotal reflects the total price of your
-                                orderm including duties and taxes, before any
-                                applicable disconts. It does not include
-                                delivery costs and international transaction 
-                                fees.
+                            <div className="text-sm text-justify font-bold ml-2 mr-2 md:text-md py-5 border-t mt-5">
+                            1 pc Ayam Crispy + Nasi + Jasmine Tea Medium 
+                            [ Rasa Baru, Enaknya sampe gigitan terakhir ! ] 
+                            <br/>
                             </div>
+                            𝘗𝘰𝘵𝘰𝘯𝘨𝘢𝘯 𝘢𝘺𝘢𝘮 𝘺𝘢𝘯𝘨 𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢 𝘵𝘦𝘳𝘨𝘢𝘯𝘵𝘶𝘯𝘨 𝘬𝘦𝘵𝘦𝘳𝘴𝘦𝘥𝘪𝘢𝘢𝘯 𝘥𝘪 𝘵𝘰𝘬𝘰 𝘱𝘢𝘥𝘢 𝘴𝘢𝘢𝘵 𝘱𝘦𝘮𝘦𝘴𝘢𝘯𝘢𝘯/𝘱𝘦𝘯𝘨𝘪𝘳𝘪𝘮𝘢𝘯.
                         </div>
 
                         {/* Button Start */}
